@@ -1,0 +1,15 @@
+
+  <li class="list-group-item" [ngStyle]="{'background-color': getBackColor()}">
+    <div [ngStyle]="{color: getColor()}">
+      <h4 >Post : {{ postName }}</h4>
+      <p>Mis à Jour : {{ lastUpdate | date: 'short'}}</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Doloremque voluptatem cupiditate, possimus repellat id ut nemo odio voluptates temporibus veritatis eligendi.
+          Molestias numquam cumque eaque voluptatibus. 
+        Debitis blanditiis modi eveniet.</p>
+      <button class="btn btn-success" (click)="onUp()">Love It !</button>
+      <button class="btn btn-danger" (click)="onDown()">Don't Love It !</button>
+    </div>
+  </li>
+  
+  
